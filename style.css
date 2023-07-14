@@ -1,11 +1,20 @@
-body {
+@charset "UTF-8";
+* {
     margin: 0;
     padding: 0;
-    font-family: "Futura Medium", "游ゴシック体 Medium" ;
+}
+body {
+    
+    font-family: sans-serif , "Futura Medium", "游ゴシック体 Medium" ;
     letter-spacing: 0.12em;
     color: #fff;
     background-color: #3D91DA;
 }
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 h1 {
     font-size: 40px;
