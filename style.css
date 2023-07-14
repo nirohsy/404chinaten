@@ -25,6 +25,7 @@ section {
 footer {
     grid-column: 1 / -1;
     grid-row: foot;
+    margin-bottom: 50px;
 }
 
 figure{
@@ -60,8 +61,12 @@ p , h1 , h2 {
 article , footer {
     text-align: center;
 }
+p {
+    text-align: justify;
+}
 article  p { 
     margin-top: 0px;
+    text-align: center;
 }
  ul {
     margin-left: 25px;
@@ -70,4 +75,19 @@ article  p {
 .insta {
     width: 50px;
     margin: 100px auto;
+}
+
+@media (min-width: 768px){
+
+    body {
+        display: grid;
+    grid-template-columns: auto 750px auto;
+    }
+    header , footer {
+        grid-column: 2 / -2;
+    }
+    footer p {
+        text-align: center;
+    }
+    
 }
