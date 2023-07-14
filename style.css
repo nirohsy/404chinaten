@@ -4,21 +4,70 @@
     padding: 0;
 }
 body {
-    
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    grid-template-rows: 
+    [head] auto
+    [bun] auto 
+    [foot] auto;
     font-family: sans-serif , "Futura Medium", "游ゴシック体 Medium" ;
     letter-spacing: 0.12em;
     color: #fff;
     background-color: #3D91DA;
+}
+header , footer {
+    grid-column: 1 / -1;
+}
+section {
+    grid-column: 2 / -2;
+    grid-row: bun;
+}
+footer {
+    grid-column: 1 / -1;
+    grid-row: foot;
+}
+
+figure{
+    margin: 0;
 }
 img {
     width: 100%;
     height: auto;
 }
 
-
+.yokoku {
+    border: solid 1px #fff;
+    padding: 18px 20px;
+    width: 195px;
+    text-align: center;
+    margin: 35px auto ;
+}
+.bar{
+    height: 45px;
+    width: 0px;
+    margin: 65px auto;
+    border: solid 1px #fff;
+}
 h1 {
     font-size: 40px;
 }
 h2 {
     font-size: 27px;
+}
+p , h1 , h2 {
+    margin-top: 65px;
+}
+article , footer {
+    text-align: center;
+}
+article  p { 
+    margin-top: 0px;
+}
+ ul {
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+.insta {
+    width: 50px;
+    margin: 100px auto;
 }
