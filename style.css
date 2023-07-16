@@ -115,7 +115,11 @@ aside h4 {
     margin-top: 50px;
 }
 .pepe {
-    font-size: 11px;
+    font-size: 9px;
+    letter-spacing: 0;
+    transform: scale(1 , 1.3);
+}
+.nirohs {
     letter-spacing: 0;
 }
 
@@ -132,5 +136,7 @@ aside h4 {
         font-size: 12px;
         letter-spacing: 0.12em;
     }
-    
+    .nirohs {
+        letter-spacing: 0.12em;
+    }
 }
