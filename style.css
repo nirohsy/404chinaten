@@ -54,8 +54,8 @@ img {
     border: solid 1px #fff;
     padding: 18px 20px;
     width: 195px;
-    margin: 35px auto ;
-    font-size: 40px;
+    margin: 35px auto;
+    font-size: 30px;
 }
 .bar{
     height: 45px;
@@ -66,10 +66,12 @@ img {
 h1 , h3{
     font-size: 40px;
     text-align: center;
+    font-weight: normal;
 }
 h2 {
     font-size: 27px;
     margin-bottom: 10px;
+    font-weight: normal;
 }
 p , h1 , h2  {
     margin-top: 65px;
@@ -110,6 +112,7 @@ aside i img{
     height: 9px;
     margin-bottom: 0px;
     margin-right: 5px;
+    border-radius: 0%;
 }
 aside h4 {
     text-align: center;
