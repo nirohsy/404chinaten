@@ -15,6 +15,8 @@ body {
     letter-spacing: 0.12em;
     color: #fff;
     background-color: #3D91DA;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 header , footer {
     grid-column: 1 / -1;
@@ -53,6 +55,7 @@ img {
     padding: 18px 20px;
     width: 195px;
     margin: 35px auto ;
+    font-size: 40px;
 }
 .bar{
     height: 45px;
@@ -99,25 +102,21 @@ aside a {
     text-align: center;
     color: #fff;
 }
-.twitter{
+aside i img{
     width: 11px;
     height: 9px;
     margin-bottom: 0px;
-}
-aside ul{
-    margin: 0px;
-}
-aside li {
-    display: inline-block;
+    margin-right: 5px;
 }
 aside h4 {
     text-align: center;
     margin-top: 50px;
 }
 .pepe {
-    font-size: 9px;
-    letter-spacing: 0;
-    transform: scale(1 , 1.3);
+    font-size: 10px;
+    letter-spacing: -0.05em;
+    margin-top: 1px;
+    margin-left: -2px;
 }
 .nirohs {
     letter-spacing: 0;
@@ -133,8 +132,9 @@ aside h4 {
         grid-column: 2 / -2;
     }
     .pepe {
-        font-size: 12px;
+        font-size: 0.83em;
         letter-spacing: 0.12em;
+        margin-top: 0px;
     }
     .nirohs {
         letter-spacing: 0.12em;
