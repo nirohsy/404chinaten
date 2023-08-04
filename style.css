@@ -163,10 +163,10 @@ aside h4 {
     margin-top: 33px;
 }
 .event-day{
-    text-align: end;
+    text-align: right;
 }
 .event-title {
-    text-align: start;
+    text-align: left;
 }
 .event-bar{
     height: 107%;
