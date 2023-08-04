@@ -11,7 +11,7 @@ body {
     [bun] auto 
     [member] auto
     [foot] auto;
-    font-family: "Futura Medium", "游ゴシック体 Medium" , sans-serif ;
+    font-family:  "游ゴシック体 Medium" , sans-serif ;
     letter-spacing: 0.12em;
     color: #fff;
     background-color: #3D91DA;
@@ -56,6 +56,7 @@ img {
     width: 195px;
     margin: 35px auto;
     font-size: 30px;
+    border-radius: 9px;
 }
 .bar{
     height: 45px;
@@ -68,10 +69,15 @@ h1 , h3{
     text-align: center;
     font-weight: normal;
 }
-h2 {
+h2{
     font-size: 27px;
+    font-family: "Futura Medium", sans-serif ;
     margin-bottom: 10px;
+}
+.sub-title {
+    font-size: 22px;
     font-weight: normal;
+    font-family: "游ゴシック体 Medium", sans-serif ;
 }
 p , h1 , h2  {
     margin-top: 65px;
@@ -84,10 +90,16 @@ article , footer {
 }
 p {
     text-align: justify;
+    font-size: 15px;
 }
 article  p { 
     margin-top: 0px;
     text-align: center;
+}
+.sub{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.7em;
 }
 ul {
     margin-left: 25px;
@@ -118,6 +130,7 @@ aside h4 {
     text-align: center;
     margin-top: 50px;
 }
+
 .pepe {
     font-size: 10px;
     letter-spacing: -0.05em;
@@ -126,6 +139,46 @@ aside h4 {
 }
 .nirohs {
     letter-spacing: 0;
+}
+.music{
+    grid-column: 1 / -1;
+    margin-top: -100px;
+}
+.event{
+    display: grid;
+    grid-template-columns: auto 1px auto;
+    column-gap: 12px;
+    font-weight: 800;
+    border-radius: 9px;
+    font-size: 14px;
+    padding: 40px 0px;
+    background-color: #ffffff;
+    color:#3D91DA;
+}
+.event ul{
+    list-style: none;
+    margin-left: 0px;
+}
+.event li + li{
+    margin-top: 33px;
+}
+.event-day{
+    text-align: end;
+}
+.event-title {
+    text-align: start;
+}
+.event-bar{
+    height: 107%;
+    width: 0px;
+    border: solid 1px #3D91DA;
+    margin-top: -10px;
+}
+@media (min-width: 450px){
+.event {
+    width: 400px;
+    margin: auto;
+}
 }
 
 @media (min-width: 768px){
@@ -145,4 +198,9 @@ aside h4 {
     .nirohs {
         letter-spacing: 0.12em;
     }
+}
+
+a :hover{
+    filter: brightness(2);
+    scale: 105%;
 }
