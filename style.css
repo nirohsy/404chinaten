@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     display: grid;
     grid-template-columns: 25px 1fr 25px;
@@ -154,6 +157,8 @@ aside h4 {
     padding: 40px 0px;
     background-color: #ffffff;
     color:#3D91DA;
+    max-width: 400px;
+    margin: auto;
 }
 .event ul{
     list-style: none;
@@ -181,12 +186,6 @@ aside h4 {
     width: 0px;
     border: solid 1px #3D91DA;
     margin-top: -6px;
-}
-@media (min-width: 450px){
-.event {
-    width: 400px;
-    margin: auto;
-}
 }
 
 @media (min-width: 768px){
