@@ -117,7 +117,7 @@ section {
     margin: 65px 45px 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 65px 70px;
+    gap: 65px 50px;
 }
 footer {
     grid-column: 1 / -1;
