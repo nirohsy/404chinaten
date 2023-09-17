@@ -127,7 +127,6 @@ footer {
 footer p {
     text-align: center;
 }
-
 figure{
     margin: 0;
 }
@@ -135,7 +134,9 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+a {
+    color: #fff;
+}
 .yokoku {
     border: solid 1px #fff;
     padding: 18px 20px;
