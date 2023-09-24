@@ -114,7 +114,7 @@ section {
 .member {
     grid-column: 2 / -2;
     grid-row: member;
-    margin: 65px 45px 200px;
+    margin: 65px 20px 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 65px 50px;
@@ -167,6 +167,11 @@ h2{
     font-size: 27px;
     font-family: "Futura Medium", sans-serif ;
     margin-bottom: 10px;
+}
+.sub-day {
+    font-size: 10px;
+    letter-spacing: 0.5em;
+    font-style: italic;
 }
 h3 {
     margin-top: 200px;
@@ -275,6 +280,7 @@ aside h4 {
     padding-bottom: 0px;
     margin-top: 1px;
     display: grid;
+    letter-spacing: 0;
 }
 .event-title {
     grid-column: 3 / 4;
@@ -283,10 +289,20 @@ aside h4 {
 }
 .event-bar{
     grid-column: 2 / 3;
-    height: 360px;
+    height: 500px;
     width: 0px;
     border: solid 1px #3D91DA;
     margin-top: -6px;
+}
+.heizitu {
+    font-size: 10px;
+    color: gray;
+    display: block;
+}
+.syukuzitu {
+    font-size: 10px;
+    color: red;
+    display: block;
 }
 .tickets {
     margin-top: 50px;
