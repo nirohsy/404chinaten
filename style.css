@@ -13,6 +13,7 @@ body {
     [head] auto
     [bun] auto 
     [member] auto
+    [back] auto
     [foot] auto;
     font-family:  "游ゴシック体 Medium" , sans-serif ;
     letter-spacing: 0.12em;
@@ -119,6 +120,10 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 65px 50px;
 }
+article {
+    grid-column: 2 / -2;
+    grid-row: back;
+}
 footer {
     grid-column: 1 / -1;
     grid-row: foot;
@@ -136,6 +141,10 @@ img {
 }
 a {
     color: #fff;
+    text-decoration: none;
+}
+.place {
+    text-decoration: underline;
 }
 .yokoku {
     border: solid 1px #fff;
@@ -181,9 +190,6 @@ h3 {
     font-weight: normal;
     font-family: "游ゴシック体 Medium", sans-serif ;
 }
-.sub-title br {
-    display: none;
-}
 article , footer {
     text-align: center;
 }
@@ -192,8 +198,8 @@ p {
     font-size: 15px;
 }
 article  p { 
-    margin-top: 0px;
     text-align: center;
+    margin-top: 50px;
 }
 .sub{
     font-size: 12px;
@@ -309,31 +315,27 @@ aside h4 {
 .ticket {
     margin-top: 40px;
 }
-
-@media (min-width: 768px){
-
-    body {
-        display: grid;
-    grid-template-columns: auto 750px auto;
-    }
-    header , footer {
-        grid-column: 2 / -2;
-    }
-    .pepe {
-        font-size: 0.83em;
-        letter-spacing: 0.12em;
-        margin-top: 0px;
-    }
-    .nirohs {
-        letter-spacing: 0.12em;
-    }
-    .sub-title br {
-        display: block;
-    }
-    .sub br {
-        display: none;
-    }
+.sponsor {
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.5em;
+    background-color: #0755dc;
+    padding-bottom: 10px;
 }
+.sponsor p {
+    padding-top: 15px;
+}
+.sponsorGrid {
+    display: inline;
+}
+.sponsor img {
+    height: 35px;
+    margin: 15px 10px;
+}
+
+
+
+/*--ボタンの設定--*/
 a :hover{
     filter: brightness(2);
     scale: 105%;
@@ -375,3 +377,43 @@ a :hover{
   .c_morebtn2:hover:before {
     transform-origin: left;
   }
+
+  @media (min-width: 768px){
+
+    body {
+        display: grid;
+        grid-template-columns: auto 750px auto;
+    }
+    header {
+        grid-column: 2 / -2;
+    }
+    .pepe {
+        font-size: 0.83em;
+        letter-spacing: 0.12em;
+        margin-top: 0px;
+    }
+    .nirohs {
+        letter-spacing: 0.12em;
+    }
+    .sub-title br {
+        display: block;
+    }
+    .sub br {
+        display: none;
+    }
+    article {
+        grid-column: 1 / -1;
+        grid-row: back;
+    }
+    .sponsor {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    .sponsor img {
+        margin: 20px 50px;
+    }
+    .buttom {
+        width: 50%;
+        margin: 50px auto;
+    }
+}
