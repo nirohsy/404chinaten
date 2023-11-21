@@ -123,11 +123,17 @@ section {
 article {
     grid-column: 2 / -2;
     grid-row: back;
+    text-align: center;
+}
+article  p { 
+    text-align: center;
+    margin-top: 50px;
 }
 footer {
     grid-column: 1 / -1;
     grid-row: foot;
     margin-bottom: 50px;
+    text-align: center;
 }
 footer p {
     text-align: center;
@@ -153,6 +159,9 @@ a {
     margin: 35px auto;
     font-size: 30px;
     border-radius: 9px;
+}
+.yokoku-center , .yokoku-center p {
+    text-align: center;
 }
 rt {
     font-size: 13px;
@@ -185,21 +194,18 @@ h2{
 h3 {
     margin-top: 200px;
 }
+h4 {
+    text-align: center;
+    margin-top: 50px;
+}
 .sub-title {
     font-size: 22px;
     font-weight: normal;
     font-family: "游ゴシック体 Medium", sans-serif ;
 }
-article , footer {
-    text-align: center;
-}
 p {
     text-align: justify;
     font-size: 15px;
-}
-article  p { 
-    text-align: center;
-    margin-top: 50px;
 }
 .sub{
     font-size: 12px;
@@ -234,11 +240,6 @@ aside i img{
     margin-right: 5px;
     border-radius: 0%;
 }
-aside h4 {
-    text-align: center;
-    margin-top: 50px;
-}
-
 .pepe {
     font-size: 10px;
     letter-spacing: -0.05em;
